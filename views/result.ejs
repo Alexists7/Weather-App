@@ -1,0 +1,20 @@
+<%- include("header") -%>
+<div class="app-wrap">
+    <main class="newMain">
+    <section class="location">
+<div class="city"><%= query %>, <%= country %></div>
+<div class="date"><%= day %></div>
+    </section>
+<div class="current">
+    <div class="temp"><%= temp %><span>°C</span></div>
+    <div class="weather"><%= weatherDescription %></div>
+    <div class="icon"><img src="<%= imageURL %>"></div>
+    <form action="/" method="submit" class="firstForm">
+    <button type="submit" class="btn btn-outline-primary btn-lg">Try Again</button>   
+    </form>
+</main>
+
+
+</div>
+</div>
+<%- include("footer") -%>

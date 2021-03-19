@@ -1,0 +1,26 @@
+<%- include("header") -%>
+
+<div class="app-wrap">
+    <header>
+        <form action="/" method="post" class="firstForm">
+        <input type="text" autocomplete="off" class="search-box"
+        placeholder="Enter City" id="cityInput" name="cityName">
+        <button type="submit" class="btn btn-outline-primary btn-lg">Search</button>
+        </form>
+        </header>
+        <main>
+            <section class="location">
+            <div class="city">Machester, GB</div>
+            <div class="date"><%= day %></div>
+            </section>
+        <div class="current">
+        <div class="temp">15<span>°C</span></div>
+        <div class="weather">Sunny</div>
+      </main>
+ </div>
+
+
+
+
+
+<%- include("footer") -%>
